@@ -9,10 +9,10 @@
 #X obj 31 230 r mstrbpm;
 #X obj 121 378 catch~ all;
 #X obj 94 348 s 8th;
-#N canvas 482 178 280 177 preset 0;
+#N canvas 482 178 279 201 preset 0;
 #X obj 14 13 loadbang;
 #X text 77 12 Presets;
-#X msg 14 37 \; breakinit symbol ./187.wav \; sampleinit symbol ./stretch.wav \; basenoteinit 30 \; gloscale 8 \; basstoginit 1 \; breakstoginit 1 \; samplertoginit 1 \; bpminit 168 \;, f 33;
+#X msg 14 37 \; breakinit symbol ./187.wav \; breakpresinit 4 1 1 \; sampleinit symbol ./stretch.wav \; basenoteinit 30 \; gloscale 8 \; basstoginit 1 \; breakstoginit 1 \; samplertoginit 1 \; bpminit 168 \;, f 33;
 #X connect 0 0 2 0;
 #X restore 29 19 pd preset;
 #X f 23;
@@ -92,13 +92,13 @@
 #X obj 31 142 s glorest;
 #X obj 31 202 s glonewpat;
 #X obj 31 521 tgl 19 0 empty breakstoginit On/Off 22 10 0 10 #fcfcfc #000000 #000000 0 1;
-#N canvas 386 183 316 372 breaks 0;
+#N canvas 772 89 351 372 breaks 0;
 #X obj 19 70 slicer;
-#X obj 207 47 r mstrbpm;
-#X obj 205 21 r mstrswtch;
-#X obj 19 47 bng 19 250 50 0 empty glorest Restart 0 -7 0 8 #fcfcfc #000000 #000000;
-#X obj 81 47 r breakinit;
-#X obj 143 21 bng 19 250 50 0 empty breakrndm New\ pattern 0 -7 0 8 #fcfcfc #000000 #000000;
+#X obj 217 22 r mstrbpm;
+#X obj 130 47 r mstrswtch;
+#X obj 19 22 bng 19 250 50 0 empty glorest Restart 0 -7 0 8 #fcfcfc #000000 #000000;
+#X obj 31 47 r breakinit;
+#X obj 118 22 bng 19 250 50 0 empty breakrndm New\ pattern 0 -7 0 8 #fcfcfc #000000 #000000;
 #X obj 19 337 throw~ all;
 #X obj 19 278 *~;
 #X obj 37 255 inlet;
@@ -106,6 +106,7 @@
 #X obj 104 297 rev2~ 89 10 1200 10;
 #X obj 104 337 throw~ left;
 #X obj 190 337 throw~ right;
+#X obj 229 47 r breakpresinit;
 #X connect 0 0 7 0;
 #X connect 1 0 0 4;
 #X connect 2 0 0 3;
@@ -117,6 +118,7 @@
 #X connect 8 0 7 1;
 #X connect 10 0 11 0;
 #X connect 10 1 12 0;
+#X connect 13 0 0 5;
 #X restore 31 545 pd breaks;
 #X f 24;
 #X obj 31 113 bng 25 250 50 0 empty empty empty 0 -10 0 12 #c6feff #000000 #000000;

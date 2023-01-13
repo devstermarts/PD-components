@@ -1,4 +1,4 @@
-#N canvas 38 223 1030 357 12;
+#N canvas 53 82 1038 394 12;
 #X floatatom 294 244 3 0 0 2 Slcs \$0-slicesinit \$0-slices 10;
 #X obj 209 303 expr pow (2 \, $f1);
 #X obj 209 108 bng 15 250 50 0 \$0-loadfile empty Load\ file 17 7 0 10 #00ff04 #000000 #000000;
@@ -358,8 +358,15 @@
 #X text 541 19 Global BPM;
 #X text 282 19 Rndmz;
 #X text 168 19 Filepath;
-#X text 639 16 Slicer is a sampler engine primarily useful for breakbeats. Samples can be loaded using the load file button or by sending the file path as message through the second inlet. The original tempo of the sample is calculated based on the assumption that it's a 4/4 meter (and either 1 or 2 bars in length \, selectable via the radio button in the top right). Via the fourth inlet (or the Adjust BPM number box) \, the BPM can be adjusted to the global tempo of the main patch. The file can be split 0-4 times resulting in 1-16 equal slices that can be played in either a totally random order (Mode trigger off) or as a randomly generated but fixed pattern when Mode trigger is on. Sgl/Dbl switches between a pattern length 1x/ 2x the amount of slices generated. The Rndmz button (or a bang sent to the third inlet) generates another random pattern., f 53;
 #X msg 26 241 \; \$1-splitinit 4 \; \$1-patmodeinit 1 \; \$1-sgldblinit 1 \; \$1-amplinit 0.8 \; \$1-barsinit 1, f 18;
+#X obj 625 20 inlet;
+#X obj 846 91 s \$0-patmodeinit;
+#X listbox 625 44 6 0 0 0 - - - 0;
+#X obj 625 67 unpack f f f, f 32;
+#X obj 625 91 s \$0-splitinit;
+#X obj 735 91 s \$0-sgldblinit;
+#X text 668 19 Preset inlet (Splits \, Single/ Double pattern \, Mode);
+#X text 622 120 Slicer is a sampler engine primarily useful for breakbeats. Samples can be loaded using the load file button or by sending the file path as message through the second inlet. The original tempo of the sample is calculated based on the assumption that it's a 4/4 meter (and either 1 or 2 bars in length \, selectable via the radio button in the top right). Via the fourth inlet (or the Adjust BPM number box) \, the BPM can be adjusted to the global tempo of the main patch. The file can be split 0-4 times resulting in 1-16 equal slices that can be played in either a totally random order (Mode trigger off) or as a randomly generated but fixed pattern when Mode trigger is on. Sgl/Dbl switches between a pattern length 1x/ 2x the amount of slices generated. The Rndmz button (or a bang sent to the third inlet) generates another random pattern. Fifth inlet allows setting other parameters from outside the patch., f 53;
 #X connect 1 0 32 0;
 #X connect 7 0 8 0;
 #X connect 12 0 7 0;
@@ -369,9 +376,14 @@
 #X connect 19 0 31 0;
 #X connect 21 0 28 0;
 #X connect 24 0 37 0;
-#X connect 25 0 44 0;
+#X connect 25 0 43 0;
 #X connect 26 0 25 0;
 #X connect 33 0 1 0;
 #X connect 34 0 36 0;
 #X connect 38 0 35 0;
+#X connect 44 0 46 0;
+#X connect 46 0 47 0;
+#X connect 47 0 48 0;
+#X connect 47 1 49 0;
+#X connect 47 2 45 0;
 #X coords 0 -1 1 1 255 170 2 200 100;
