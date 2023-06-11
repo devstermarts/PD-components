@@ -41,8 +41,9 @@
 #X obj 16 153 s \$0-chordselslinit;
 #X msg 16 129 range 0 \$1;
 #X obj 15 60 t b b, f 25;
-#X text 184 134 Load chords.txt list (needs to be in same folder) and scales Chord Select slider according to no. of list entries., f 41;
-#X text 353 301 Chordculator imports an external text file of chords with their name and half tone interval sequence. The base MIDI note value can be put in via the inlet. Chord note values are forwarded as a list via the outlet to the calling patch. Last updated 9.6.23, f 32;
+#X text 184 128 Load chords.txt list (needs to be in same folder) and scales Chord Select slider according to no. of list entries., f 41;
+#X msg 111 129 14, f 2;
+#X text 353 301 Chordculator imports an external text file of chords with their name and half tone interval sequence. The base MIDI note value can be put in via the inlet. Chord note values are forwarded as a list via the outlet to the calling patch. Last updated 11.6.23, f 32;
 #X connect 0 0 3 0;
 #X connect 1 0 17 0;
 #X connect 2 0 1 0;
@@ -88,7 +89,9 @@
 #X connect 32 0 27 0;
 #X connect 36 0 37 0;
 #X connect 37 0 40 0;
+#X connect 37 0 43 0;
 #X connect 40 0 39 0;
 #X connect 41 0 36 0;
 #X connect 41 1 31 0;
+#X connect 43 0 39 0;
 #X coords 0 -1 1 1 235 65 2 350 230;
