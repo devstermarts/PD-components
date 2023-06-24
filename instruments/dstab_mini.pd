@@ -1,4 +1,4 @@
-#N canvas 335 35 762 332 12;
+#N canvas 1103 186 762 332 12;
 #X obj 19 258 *~;
 #X obj 161 259 *~;
 #X obj 303 259 *~;
@@ -138,8 +138,8 @@
 #X obj 571 192 s \$0-kraninit;
 #X text 614 10 Preset in;
 #X obj 571 140 s \$0-krevinit;
-#X text 49 84 DSTAB mini is a lightweight stab synth with a randomizer option. Last updated 9.6.23, f 25;
-#X msg 392 81 \; \$1-kcutinit 400 \; \$1-krevinit 85 \; \$1-kdecinit 600 \; \$1-kampinit 0.7;
+#X msg 392 81 \; \$1-kcutinit 400 \; \$1-krevinit 85 \; \$1-kdecinit 600 \; \$1-kampinit 0.7 \; \$1-kraninit 0;
+#X text 49 84 DSTAB mini is a lightweight stab synth with a randomizer option. Last updated 24.6.23, f 25;
 #X connect 0 0 3 0;
 #X connect 1 0 4 0;
 #X connect 2 0 5 0;
@@ -153,7 +153,7 @@
 #X connect 19 0 6 3;
 #X connect 20 0 6 2;
 #X connect 21 0 6 1;
-#X connect 22 0 40 0;
+#X connect 22 0 39 0;
 #X connect 23 0 22 0;
 #X connect 25 0 6 0;
 #X connect 25 1 10 0;
