@@ -166,7 +166,7 @@
 #X obj 277 162 bng 15 250 50 0 \$0-dvarres \$0-dvarresinit Res -2 -8 0 10 #fcfcfc #000000 #000000;
 #X obj 617 40 s \$0-bpminit;
 #X obj 617 79 r \$0-bpm;
-#X msg 12 93 \; \$1-flopinit 7000 \; \$1-fhipinit 100 \; \$1-fvoinit 0.9 \; \$1-fbkinit 0.7 \; \$1-drightinit 5 \; \$1-dleftinit 3 \; \$1-dvarinit 1 \; \$1-dvoinit 1 \; \$1-bpminit 123;
+#X msg 12 93 \; \$1-flopinit 7000 \; \$1-fhipinit 400 \; \$1-fvoinit 0.9 \; \$1-fbkinit 0.8 \; \$1-drightinit 6 \; \$1-dleftinit 2 \; \$1-dvarinit 1 \; \$1-dvoinit 1 \; \$1-bpminit 123;
 #X connect 0 0 1 0;
 #X connect 1 0 41 0;
 #X connect 1 1 38 0;
