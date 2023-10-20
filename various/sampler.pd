@@ -1,4 +1,4 @@
-#N canvas 801 353 595 534 12;
+#N canvas 1104 224 595 534 12;
 #X obj 26 277 bng 15 250 50 0 \$0-sloadfile empty Load 18 8 0 10 #00ff04 #000000 #000000;
 #N canvas 830 139 450 278 (subpatch) 0;
 #X array \$0-waver 251031 float 2;
@@ -179,13 +179,13 @@
 #X obj 198 211 hsl 48 15 0 251031 0 0 \$0-sendslider \$0-sendsliderinit End 52 8 0 10 #e3c6ff #9c00ff #000000 0 1;
 #X obj 198 192 hsl 48 15 0 251031 0 0 \$0-sstartslider \$0-sstartsliderinit Start 52 8 0 10 #c6feff #00faff #000000 0 1;
 #X obj 198 230 hsl 48 15 -125516 125516 0 0 \$0-soffset \$0-soffsetsliderinit Posit. 52 8 0 10 #ffc7c6 #ff0400 #000000 0 1;
-#X obj 153 457 r s \$0-slength;
 #X obj 153 491 outlet;
 #X obj 120 301 bng 15 250 50 0 \$0-sreload \$0-sreloadinit Sample\ Reload 18 8 0 10 #fcfcfc #000000 #000000;
 #X obj 215 15 inlet;
 #X obj 215 40 s \$0-soffsetsliderinit;
 #X text 324 82 Sampler is a simple sample player that uses tabplay~ to play back a single sample in an array. Sliders next to the graphical array allow to define start and end position of sample playback. Once defined \, the position slider allows to alter the position of the defined range. The first inlet takes in bangs to trigger playback of the sample \, the second inlet takes in the sample filepath. The playback position can be altered via the third inlet. First outlet outputs the audio \, the second outlet outputs the sample length. Attn.: slider solution is a bit sketchy :), f 34;
 #X text 324 385 Last updated 20.10.23, f 25;
+#X obj 153 457 r \$0-slength;
 #X connect 4 0 21 0;
 #X connect 5 0 4 0;
 #X connect 7 0 17 0;
@@ -193,6 +193,6 @@
 #X connect 15 0 9 0;
 #X connect 18 0 9 1;
 #X connect 19 0 10 0;
-#X connect 27 0 28 0;
-#X connect 30 0 31 0;
+#X connect 29 0 30 0;
+#X connect 33 0 27 0;
 #X coords 0 -1 1 1 275 155 2 15 170;
