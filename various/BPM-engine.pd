@@ -1,14 +1,14 @@
 #N canvas 49 122 948 362 12;
-#X floatatom 36 82 4 1 999 1 BPM \$0-engbpminit \$0-engbpm 0;
+#X floatatom 36 82 4 1 999 1 BPM \$0-engbpminit \$0-engbpm 8;
 #X msg 168 247 tempo \$1 permin;
 #X obj 180 75 tgl 15 0 \$0-engtog \$0-engtoginit empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 168 296 metro 1 120 permin, f 19;
-#X floatatom 99 82 3 1 16 1 Meter \$0-engmetinit \$0-engmet 0;
+#X floatatom 91 82 3 1 16 1 Meter \$0-engmetinit \$0-engmet 8;
 #X obj 794 243 mod;
 #X obj 794 267 sel 0;
 #X obj 794 193 i;
 #X obj 794 218 + 1;
-#X obj 36 107 bng 16 250 50 0 \$0-engres \$0-engresinit Reset 19 7 0 12 #fcfcfc #000000 #000000;
+#X obj 36 105 bng 16 250 50 0 \$0-engres \$0-engresinit Reset 19 7 0 8 #fcfcfc #000000 #000000;
 #X msg 315 247 tempo \$1 permin;
 #X obj 315 296 metro 0.5 120 permin;
 #X msg 469 247 tempo \$1 permin;
@@ -49,7 +49,7 @@
 #X text 19 199 Half notes;
 #X obj 21 222 r \$0-engbpm;
 #X obj 31 272 r \$0-engtog;
-#X obj 100 107 bng 16 250 50 0 empty \$0-eng1b "One" 19 7 0 12 #ffffff #000000 #ffffff;
+#X obj 91 105 bng 16 250 50 0 \$0-eng1bdummy \$0-eng1b New\ bar 19 7 0 8 #ffffff #000000 #2f004d;
 #X obj 21 321 outlet;
 #X obj 168 321 outlet;
 #X obj 315 321 outlet;
@@ -64,7 +64,7 @@
 #X text 119 136 16;
 #X text 151 136 32;
 #X text 183 136 1;
-#X text 547 37 BPM engine generates bangs on different note values based on a global BPM and a given meter. Last updated 7.9.23, f 29;
+#X text 547 37 BPM engine generates bangs on different note values based on a global BPM and a given meter. Last updated 01.11.23, f 29;
 #X connect 1 0 3 0;
 #X connect 3 0 39 0;
 #X connect 3 0 52 0;
