@@ -43,8 +43,8 @@
 #X obj 168 40 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 520 14 inlet;
 #X text 563 13 Var. Level;
-#X msg 448 40 0, f 1;
 #X text 446 196 Frauke sequencer generates a random pattern of numbers from a value received through the third inlet (index). The respective value is pushed through the outlet on any bang received via the first inlet. The second inlet generates a random new sequence. The fourth inlet allows to alter the level of pattern complexity from outside the patch. Last updated 9.6.23, f 31;
+#X msg 448 40 1, f 1;
 #X connect 0 0 6 0;
 #X connect 1 0 2 0;
 #X connect 2 0 7 0;
@@ -77,11 +77,11 @@
 #X connect 33 0 0 0;
 #X connect 33 1 1 0;
 #X connect 33 2 0 1;
-#X connect 35 0 44 0;
+#X connect 35 0 45 0;
 #X connect 36 0 31 0;
 #X connect 38 0 33 0;
 #X connect 38 1 8 0;
 #X connect 41 0 31 0;
 #X connect 42 0 34 0;
-#X connect 44 0 34 0;
+#X connect 45 0 34 0;
 #X coords 0 -1 1 1 110 70 2 10 190;
