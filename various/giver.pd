@@ -37,7 +37,7 @@
 #X obj 203 10 tgl 12 0 \$0-switch \$0-switchinit empty 0 -10 0 12 #fcfcfc #000000 #000000 0 1;
 #X obj 65 197 r \$0-switch;
 #X obj 26 224 spigot;
-#X msg 26 121 \; \$1-expinit -2 \; \$1-wininit 1 \; \$0-switchinit 1;
+#X msg 26 121 \; \$1-expinit -2 \; \$1-wininit 1 \; \$1-switchinit 1;
 #X connect 0 0 37 0;
 #X connect 1 0 2 0;
 #X connect 1 1 2 1;
