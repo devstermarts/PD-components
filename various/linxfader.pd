@@ -1,0 +1,14 @@
+#N canvas 623 328 575 161 12;
+#X obj 18 15 hsl 155 19 -0.5 0.5 0 0 \$0-xfader \$0-xfaderinit empty -2 -10 0 12 #00faff #000000 #000000 0 1;
+#X obj 15 46 r \$0-xfader;
+#X obj 15 81 expr if($f1 <= 0 \, abs($f1)+0.5 \, 0.5-$f1) \; if($f1 >= 0 \, 0.5+$f1 \, 0.5-abs($f1));
+#X obj 15 119 outlet;
+#X obj 299 119 outlet;
+#X obj 196 15 inlet;
+#X obj 196 46 s \$0-xfaderinit;
+#X text 374 14 LINXFader is a simple linear crossfader abstraction that outputs values between 0 and 1 via two outlets where the sum of the values of both matches 1 Last updated some time in early summer 2023, f 26;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 2 1 4 0;
+#X connect 5 0 6 0;
+#X coords 0 -1 1 1 170 30 2 10 10;
