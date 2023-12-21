@@ -38,6 +38,7 @@
 #X obj 65 197 r \$0-switch;
 #X obj 26 224 spigot;
 #X msg 26 121 \; \$1-expinit -2 \; \$1-wininit 1 \; \$1-switchinit 1;
+#X obj 26 248 t b b;
 #X connect 0 0 37 0;
 #X connect 1 0 2 0;
 #X connect 1 1 2 1;
@@ -67,6 +68,7 @@
 #X connect 30 1 12 0;
 #X connect 33 0 34 0;
 #X connect 36 0 37 1;
-#X connect 37 0 3 0;
-#X connect 37 0 1 0;
+#X connect 37 0 39 0;
+#X connect 39 0 3 0;
+#X connect 39 1 1 0;
 #X coords 0 -1 1 1 200 55 2 15 10;
