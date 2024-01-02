@@ -46,6 +46,7 @@
 #X obj 357 567 r \$0-chordtypeotp;
 #X obj 357 589 outlet;
 #X text 352 301 Chordculator imports an external text file of chords with their name and half tone interval sequence. The base MIDI note value can be put in via the first inlet. Second inlet is for chord no. selection. Chord note values are forwarded as a list via first outlet to the calling patch \, chord type as symbol through second outlet. Last updated 30.10.23, f 32;
+#X floatatom 172 231 5 0 0 0 - - - 0;
 #X connect 0 0 3 0;
 #X connect 1 0 43 0;
 #X connect 2 0 1 0;
@@ -84,6 +85,7 @@
 #X connect 27 0 36 0;
 #X connect 28 0 25 0;
 #X connect 29 0 24 0;
+#X connect 29 0 47 0;
 #X connect 32 0 33 0;
 #X connect 33 0 35 0;
 #X connect 35 0 40 0;
