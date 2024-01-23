@@ -15,6 +15,7 @@
 #X msg 186 70 1e-13;
 #X obj 228 103 metro 20;
 #X text 201 145 Messer measures min/max signal values as provided through signal inlet and outputs as list. Last updated 26.12.23, f 26;
+#X obj 242 61 loadbang;
 #X connect 0 0 10 0;
 #X connect 0 0 11 0;
 #X connect 1 0 2 0;
@@ -36,3 +37,4 @@
 #X connect 13 0 10 1;
 #X connect 14 0 3 0;
 #X connect 14 0 1 0;
+#X connect 16 0 14 0;
