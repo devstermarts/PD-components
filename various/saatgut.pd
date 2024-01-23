@@ -1,7 +1,7 @@
 #N canvas 349 99 607 321 12;
 #N canvas 512 333 450 278 (subpatch) 0;
-#X array \$0-sampler 1024 float 2;
-#X coords 0 3 1024 -3 175 70 1 0 0;
+#X array \$0-sampler 256 float 2;
+#X coords 0 3 256 -3 175 70 1 0 0;
 #X restore 18 60 graph;
 #X obj 244 139 inlet~;
 #X obj 244 210 tabread4~ \$0-sampler;
@@ -139,9 +139,9 @@
 #X floatatom 168 42 5 0 0 2 Spread \$0-wddis \$0-wd 8;
 #X obj 414 210 loadbang;
 #X obj 414 234 f \$0;
-#X msg 414 258 \; \$1-wdinit 1 \; \$1-preseldummy 3;
 #X text 241 21 Saatgut generates an array full of randomized values between -1 and 1 to use as repetitive seed bank for inference and latent space tampering for nn~ compatible models. Values can be retrieved as signal values through the first inlet/outlet. The slider defines the possible value range. Last updated 30.12.23, f 49;
 #X floatatom 188 149 5 0 0 2 Spread \$0-loadspr \$0-loadsprdummy 8;
+#X msg 414 258 \; \$1-wdinit 1 \; \$1-preseldummy 2;
 #X connect 1 0 4 0;
 #X connect 2 0 16 0;
 #X connect 4 0 2 0;
@@ -150,5 +150,5 @@
 #X connect 16 0 3 0;
 #X connect 17 0 16 1;
 #X connect 20 0 21 0;
-#X connect 21 0 22 0;
+#X connect 21 0 24 0;
 #X coords 0 -1 1 1 215 145 2 10 25;
