@@ -55,7 +55,7 @@
 #X msg 234 440 \$1 \$2;
 #X obj 234 417 pack;
 #X obj 259 391 r \$0-smoo;
-#X obj 462 387 hsl 48 16 20 200 1 0 \$0-smoo \$0-smooinit Smooth -2 -10 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 462 387 hsl 48 16 20 1000 1 0 \$0-smoo \$0-smooinit Smooth -2 -10 0 10 #fcfcfc #000000 #000000 0 1;
 #X text 454 25 Preset inlet;
 #X text 83 351 Activate L;
 #X text 276 351 Activate R;
