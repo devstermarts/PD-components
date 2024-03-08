@@ -14,11 +14,11 @@
 #X msg 227 103 bang;
 #X obj 227 79 spigot;
 #X obj 140 228 hsl 26 13 1 8 0 0 \$0-ranger \$0-rangerinit Range -2 -6 0 8 #fcfcfc #000000 #000000 0 1;
-#N canvas 1085 264 248 208 arconpres 0;
+#N canvas 1085 264 248 208 arconpres 1;
 #X obj 14 15 loadbang;
 #X obj 14 39 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 14 63 f \$0;
-#X msg 14 87 \; \$1-arcon yticks 0 0.5 2 \; \$1-arcon ylabel -0.1 -1 0 1 \; \$1-arcon edit 0 \; \$1-arcon color 900 \; \$1-rangerinit 1 \; \$1-switchinit 0;
+#X msg 14 87 \; \$1-arcon yticks 0 0.5 2 \; \$1-arcon ylabel -0.1 -1 0 1 \; \$1-arcon edit 0 \; \$1-arcon color 900 \; \$1-rangerinit 8 \; \$1-switchinit 1;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 2 0 3 0;
