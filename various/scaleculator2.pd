@@ -15,13 +15,13 @@
 #X obj 13 86 text size \$0-scalestxt;
 #X symbolatom 210 173 40 0 0 2 Scale\ Name \$0-scltype \$0-scltypeotp 0;
 #X obj 213 196 hsl 129 18 0 50 0 0 \$0-sclsel \$0-sclselinit Scale\ Select 0 10 0 12 #dfdfdf #ff0400 #606060 0 1;
-#X obj 13 158 s \$0-sclselinit;
-#X listbox 134 300 24 0 0 0 - - - 0;
-#X obj 13 276 list split 1, f 35;
-#X listbox 13 300 15 0 0 0 - - - 0;
-#X obj 13 187 r \$0-sclsel;
-#X obj 13 252 text get \$0-scalestxt;
-#X obj 13 323 s \$0-scltype;
+#X obj 44 162 s \$0-sclselinit;
+#X listbox 134 307 24 0 0 0 - - - 0;
+#X obj 13 283 list split 1, f 35;
+#X listbox 13 307 15 0 0 0 - - - 0;
+#X obj 13 194 r \$0-sclsel;
+#X obj 13 259 text get \$0-scalestxt;
+#X obj 13 330 s \$0-scltype;
 #X obj 180 358 list length;
 #X obj 33 477 +, f 2;
 #X obj 56 477 +, f 2;
@@ -34,7 +34,7 @@
 #X obj 33 406 t b f;
 #X obj 33 611 array set \$0-scl;
 #X listbox 33 588 36 0 0 0 - - - 0;
-#X obj 134 323 t b l l;
+#X obj 134 330 t b l l;
 #X text 339 326 Calculated midi note values from the selected scale can be called via the second inlet (position) \; the value is sent through second outlet., f 30;
 #X floatatom 410 196 2 0 0 1 Index \$0-sclindex \$0-sclindexdummy 0;
 #X obj 172 477 +, f 2;
@@ -47,7 +47,7 @@
 #X obj 33 659 array size \$0-scl;
 #X obj 156 611 array define \$0-scl;
 #X obj 166 659 r \$0-sclindex;
-#X msg 23 134 0, f 1;
+#X msg 13 143 0, f 1;
 #X text 395 469 Last updated 25.03.24, f 22;
 #X text 295 85 Load ./scales.txt;
 #X obj 180 406 s \$0-sclindex;
@@ -65,8 +65,10 @@
 #X text 75 357 Note;
 #X text 339 413 The selected scale's index is put out through first outlet to main patch., f 30;
 #X floatatom 350 196 3 0 0 1 No. \$0-sclseli \$0-sclselidummy 0;
-#X obj 13 211 i;
-#X obj 58 230 s \$0-sclseli;
+#X obj 13 218 i;
+#X obj 58 237 s \$0-sclseli;
+#X obj 43 138 inlet;
+#X text 86 137 Scale;
 #X connect 0 0 32 0;
 #X connect 1 0 0 0;
 #X connect 2 0 4 0;
@@ -143,4 +145,5 @@
 #X connect 60 0 31 1;
 #X connect 66 0 21 0;
 #X connect 66 0 67 0;
+#X connect 68 0 16 0;
 #X coords 0 -1 1 1 300 75 2 200 150;
