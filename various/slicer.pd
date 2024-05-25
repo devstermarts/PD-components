@@ -3,8 +3,8 @@
 #X obj 209 303 expr pow (2 \, $f1);
 #X obj 209 108 bng 15 250 50 0 \$0-loadfile empty Load\ file 17 7 0 10 #00ff04 #000000 #000000;
 #N canvas 830 139 450 278 (subpatch) 0;
-#X array \$0-waver 112879 float 2;
-#X coords 0 1 112879 -1 145 80 2 0 0;
+#X array \$0-waver 121656 float 2;
+#X coords 0 1 121656 -1 145 80 2 0 0;
 #X restore 209 145 graph;
 #X obj 404 244 bng 15 250 50 0 \$0-rndmz \$0-rndmzinit Rndmz 0 -6 0 10 #ff8300 #000000 #000000;
 #X obj 357 147 vsl 15 75 0 1 0 0 \$0-ampl \$0-amplinit Vol. 0 -9 0 10 #feffc6 #000000 #000000 0 1;
@@ -131,7 +131,7 @@
 #X connect 20 1 19 0;
 #X connect 20 2 7 0;
 #X restore 26 102 pd sampleloader;
-#N canvas 821 185 789 557 sampleplayer 0;
+#N canvas 723 185 789 557 sampleplayer 0;
 #X obj 332 419 vline~;
 #X msg 332 395 \$1 \, \$2 \$3;
 #X obj 332 371 pack f f f;
