@@ -1,4 +1,4 @@
-#N canvas 550 29 1085 575 12;
+#N canvas 427 38 1085 575 12;
 #X obj 617 107 expr 60000/$f1;
 #X obj 617 131 t b f, f 6;
 #X floatatom 617 345 8 0 0 0 - - - 0;
@@ -161,7 +161,7 @@
 #X obj 177 226 hradio 15 1 0 8 \$0-dright \$0-drightinit Delay\ right 0 -8 0 10 #fcfcfc #000000 #000000 0;
 #X obj 177 194 hradio 15 1 0 8 \$0-dleft \$0-dleftinit Delay\ left 0 -8 0 10 #fcfcfc #000000 #000000 0;
 #X floatatom 177 160 6 0 0 2 BPM \$0-bpminit \$0-bpm 10;
-#X obj 237 162 hsl 35 15 0.99 1.01 0 0 \$0-dvar \$0-dvarinit Vari -4 -8 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 237 162 hsl 35 15 0.92 1.08 0 0 \$0-dvar \$0-dvarinit Vari -4 -8 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 277 162 bng 15 250 50 0 \$0-dvarres \$0-dvarresinit Res -2 -8 0 10 #fcfcfc #000000 #000000;
 #X obj 617 40 s \$0-bpminit;
 #X obj 617 79 r \$0-bpm;
