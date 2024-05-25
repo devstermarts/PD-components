@@ -1,0 +1,15 @@
+I-IV-V-I 0 1 5 1 7 1 0 1;
+I-V-vi-IV 0 1 7 1 9 2 5 1;
+ii-V-I 2 2 7 1 0 1;
+I-vi-IV-V 0 1 9 2 5 1 7 1;
+I-IV-vi-V 0 1 5 1 9 2 7 1;
+I-vi-ii-V 0 1 9 2 2 2 7 1;
+I-IV-I-V 0 1 5 1 0 1 7 1;
+vi-IV-I-V 9 2 5 1 0 1 7 1;
+I-V-IV-I 0 1 7 1 5 1 0 1;
+I-IV-V-IV 0 1 5 1 7 1 5 1;
+I-IV-vi-ii-V 0 1 5 1 9 2 2 2 7 1;
+IV-V-I 5 1 7 1 0 1;
+I-V-vi-iii-IV-I-IV-V 0 1 7 1 9 2 4 2 5 1 0 1 5 1 7 1;
+I-IV-V-vi 0 1 5 1 7 1 9 2;
+I-vi-IV-iii 0 1 9 2 5 1 4 2;
