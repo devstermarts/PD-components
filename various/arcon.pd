@@ -1,8 +1,8 @@
 #N canvas 498 208 424 331 12;
 #X obj 217 21 inlet~;
 #N canvas 179 204 641 589 (subpatch) 0;
-#X array \$0-arcon 512 float 0;
-#X coords 0 -1 511 1 100 70 2 0 0;
+#X array \$0-arcon 64 float 0;
+#X coords 0 1 63 -1 100 70 2 0 0;
 #X restore 28 228 graph;
 #X obj 217 163 tabwrite~ \$0-arcon;
 #X obj 227 55 env~;
@@ -14,7 +14,7 @@
 #X msg 227 103 bang;
 #X obj 227 79 spigot;
 #X obj 140 228 hsl 26 13 1 8 0 0 \$0-ranger \$0-rangerinit Range -2 -6 0 8 #fcfcfc #000000 #000000 0 1;
-#N canvas 1085 264 248 208 arconpres 1;
+#N canvas 1085 264 248 208 arconpres 0;
 #X obj 14 15 loadbang;
 #X obj 14 39 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 14 63 f \$0;
