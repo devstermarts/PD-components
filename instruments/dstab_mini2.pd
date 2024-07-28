@@ -1,7 +1,7 @@
 #N canvas 729 278 549 344 12;
 #X obj 19 229 *~;
 #X obj 19 258 outlet~;
-#N canvas 195 290 561 524 synth 0;
+#N canvas 195 290 561 524 synth 1;
 #X obj 380 261 vline~;
 #X obj 380 214 f, f 2;
 #X floatatom 391 192 5 0 0 0 - - - 0;
@@ -41,7 +41,7 @@
 #X obj 209 355 +~ 10;
 #X obj 190 381 vcf~ 3;
 #X obj 347 32 t f b b, f 10;
-#X msg 380 237 0.8 2 3 \, 1 2 5 \, 0 \$1 7;
+#X msg 380 237 0.8 2 0 \, 1 5 25 \, 0 \$1 30;
 #X connect 0 0 3 0;
 #X connect 0 0 3 1;
 #X connect 1 0 39 0;
