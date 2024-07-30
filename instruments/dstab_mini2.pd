@@ -1,7 +1,7 @@
-#N canvas 48 139 461 247 12;
+#N canvas 447 254 461 247 12;
 #X obj 158 172 *~;
 #X obj 158 213 outlet~;
-#N canvas 195 290 561 524 synth 1;
+#N canvas 195 290 561 524 synth 0;
 #X obj 379 261 vline~;
 #X obj 379 214 f, f 2;
 #X floatatom 390 192 5 0 0 0 - - - 0;
