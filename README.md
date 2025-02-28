@@ -1,2 +1,2 @@
 # PD-components
-Components, tools, abstractions for Pure Data (Vanilla)
+Effects, instruments, tools etc. for Pure Data. 
