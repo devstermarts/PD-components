@@ -8,6 +8,6 @@ Effects, instruments, tools for (generative) music production written in Pure Da
 
 
 \
-*Latest version:* v2.0.0
+*Latest version:* v2.1.0
 ## Licence
 <a href="https://github.com/devstermarts/PD-components">PD Components</a> © 2026 by <a href="https://github.com/devstermarts">Martin Heinze</a> is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
