@@ -14,14 +14,14 @@
 #X obj 14 88 + 1;
 #X obj 14 112 mod;
 #X obj 14 135 array get \$0-frauke;
-#X obj 14 159 outlet;
+#X obj 14 182 outlet;
 #X obj 247 267 r \$0-frindex;
 #X obj 44 112 r \$0-frindex;
 #X text 59 13 Call position;
-#X obj 14 197 vradio 19 1 0 3 \$0-frvar \$0-frvarinit empty 0 -10 0 12 #fcfcfc #000000 #000000 0;
-#X text 38 197 Full scale;
-#X text 38 217 Simple;
-#X text 38 237 Primitive;
+#X obj 14 237 vradio 19 1 0 3 \$0-frvar \$0-frvarinit empty 0 -10 0 12 #fcfcfc #000000 #000000 0;
+#X text 38 237 Full scale;
+#X text 38 257 Simple;
+#X text 38 277 Primitive;
 #X obj 498 112 sel 0 1;
 #X msg 498 138 1, f 1;
 #X msg 521 138 1.5;
@@ -44,7 +44,8 @@
 #X msg 498 40 1, f 1;
 #X obj 302 37 route bang float;
 #X msg 44 56 -1, f 2;
-#X text 496 196 Frauke sequencer generates a random pattern of numbers from a value received through the third inlet (index). The respective value is pushed through the outlet on any bang received via the first inlet. The second inlet generates a random new sequence. The fourth inlet allows to alter the level of pattern complexity from outside the patch. Last updated 17.04.26, f 31;
+#X obj 14 159 i, f 2;
+#X text 496 196 Frauke sequencer generates a random pattern of numbers from a value received through the third inlet (index). The respective value is pushed through the outlet on any bang received via the first inlet. The second inlet generates a random new sequence. The fourth inlet allows to alter the level of pattern complexity from outside the patch. Last updated 31.08.26, f 31;
 #X connect 0 0 6 0;
 #X connect 1 0 2 0;
 #X connect 2 0 7 0;
@@ -58,7 +59,7 @@
 #X connect 12 0 13 0;
 #X connect 13 0 11 1;
 #X connect 13 0 14 0;
-#X connect 14 0 15 0;
+#X connect 14 0 45 0;
 #X connect 16 0 7 1;
 #X connect 17 0 13 1;
 #X connect 23 0 24 0;
@@ -85,4 +86,5 @@
 #X connect 43 0 44 0;
 #X connect 43 1 35 0;
 #X connect 44 0 11 1;
-#X coords 0 -1 1 1 110 70 2 10 190;
+#X connect 45 0 15 0;
+#X coords 0 -1 1 1 110 70 2 10 230;
